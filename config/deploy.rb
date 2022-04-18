@@ -3,6 +3,7 @@ lock "~> 3.17.0"
 
 set :application, "task_app"
 set :repo_url, "https://github.com/mo09e/task_app_practice"
+set :branch, ENV['BRANCH'] || 'main'
 set :linked_files, %w{config/secrets.yml}   # 4
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}   # 5
 set :keep_releases, 5   # 6
